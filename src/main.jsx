@@ -14,6 +14,12 @@ import RootLayout from "./layouts/rootLayout/RootLayout";
 import Dashboardpage from "./routes/DashboardPage/Dashboardpage";
 import DashboardLayout from "./layouts/DashboardLayout/DashboardLayout";
 import ChatPage from "./routes/ChatPage/ChatPage";
+import SignInPage from "./routes/SignInPage/SignInPage";
+import SignUpPage from "./routes/SignUppage/SignUpPage";
+
+
+
+
 const router = createBrowserRouter([
   {
     element: <RootLayout />,
@@ -21,6 +27,14 @@ const router = createBrowserRouter([
       {
         path:"/",
         element: <Homepage />,
+      },
+      {
+        path:"/sign-in/*",
+        element: <SignInPage />,
+      },
+      {
+        path:"/sign-up/*",
+        element: <SignUpPage />,
       },
       {
         element: <DashboardLayout />,
