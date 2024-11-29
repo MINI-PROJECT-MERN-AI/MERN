@@ -1,28 +1,29 @@
-.rootLayout{
+.rootLayout {
     padding: 16px 64px;
-    height:100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-
-
-    header{
-        display:flex;
+  
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      .logo {
+        display: flex;
         align-items: center;
-        justify-content: space-between;
-
-        .logo{
-            display: flex;
-            align-items: center;
-            font-weight: bold;
-            gap:8px;
+        font-weight: bold;
+        gap: 8px;
+  
+        img {
+          width: 40px;
+          height: 40px;
         }
+      }
     }
-
+  
     main {
-        flex:1;
-        overflow:hidden;
-
+      flex: 1;
+      overflow: hidden;
     }
-    
-    
-}
+  }
